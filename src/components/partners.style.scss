@@ -1,0 +1,350 @@
+.phone {
+    margin: 25px auto;
+    --screen-clr: #0d85aa;
+    --border-clr: #29536d;
+    --loader-clr: #CCE3DE;
+    background-color: var(--screen-clr);
+    height: 250px;
+    width: 150px;
+    border-radius: .5rem;
+    border: 5px solid var(--border-clr);
+    border-top: 10px solid var(--border-clr);
+    border-bottom: 10px solid var(--border-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: shake .5s infinite linear;
+    position: relative;
+  }
+  
+  .phone::after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1rem;
+    height: 5px;
+    background-color: var(--loader-clr);
+    border-radius: .5rem;
+  }
+  
+  .circle {
+    border: 10px dashed var(--loader-clr);
+    width: 2rem;
+    height: 2rem;
+    padding: 1.7rem;
+    border-radius: 50%;
+    animation: loading 2s infinite ease-in-out;
+  }
+  
+  .text {
+    color: var(--loader-clr);
+    text-align: center;
+  }
+  
+  @keyframes loading {
+    0% {
+      rotate: 0deg;
+    }
+  
+    100% {
+      rotate: 360deg;
+    }
+  }
+ 
+  .Lorem {
+    width: max-content;
+    margin: 0 auto;
+    font-size: clamp(10px, 2.2vw, 25px);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+.samsung {
+    width: max-content;
+    position: relative;
+    margin: 35px auto;
+  }
+  
+  .samsung span {
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+  }
+  
+  .samsung span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.9px black;
+  }
+  
+  .samsung span:nth-child(2) {
+    color: darkblue;
+    -webkit-text-stroke: 1px black;
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+  
+  @keyframes uiverse723 {
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+       54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+
+  .loader {
+    width: max-content;
+    margin: 80px auto 35px auto;
+  }
+
+  .fa-apple {
+    font-size: 50px;
+    margin-right: 25px;
+    color: rgb(0, 50, 0);
+  }
+  .a {
+    color: rgb(0, 50, 0);
+    font-size: 50px;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .p {
+    color: rgb(0, 50, 0);
+    font-size: 50px;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .p2 {
+    color: rgb(0, 50, 0);
+    font-size: 50px;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .l {
+    color: rgb(0, 50, 0);
+    font-size: 50px;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+  
+  .e {
+    color: rgb(0, 50, 0);
+    font-size: 50px;
+    opacity: 0;
+    animation: pass 2s ease-in-out infinite;
+    animation-delay: 1s;
+    letter-spacing: 0.5em;
+    text-shadow: 2px 2px 3px #919191;
+  }
+
+  @keyframes pass {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .Redmi {
+    text-align: center;
+  }
+  .redmi {
+    font-size: 50px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #263238;
+    letter-spacing: 2px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .redmi::after {
+    content: 'Redmi';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFF;
+    text-shadow: 0 0 9px black, 0 0 1px black, 0 0 1px black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: animloader 6s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      height: 100%;
+    }
+  
+    100% {
+      height: 0%;
+    }
+  }
+
+  .xiaomi {
+    padding: 30px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .ani:nth-child(1) {
+    animation: ani1 2.1s ease-in-out 12s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani1 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .ani:nth-child(2) {
+    animation: ani2 2.1s ease-in-out 10s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani2 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .ani:nth-child(3) {
+    animation: ani3 2.1s ease-in-out 8s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani3 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .ani:nth-child(4) {
+    animation: ani4 2.1s ease-in-out 6s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani4 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .ani:nth-child(5) {
+    animation: ani5 2.1s ease-in-out 4s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani5 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .ani:nth-child(6) {
+    animation: ani6 2.1s ease-in-out 2s infinite;
+    color: #f46500;
+  }
+  
+  @keyframes ani6 {
+    50% {
+      font-size: 40px;
+    }
+  }
+  
+  .nokia{ 
+    margin: 0 auto; 
+    overflow: hidden;
+    white-space: nowrap;  
+    vertical-align: bottom;
+    animation: typing 2500ms steps(10) infinite;
+  }
+
+  .nokia-text {
+    color: #C54595;
+    font-size: 50px; 
+    font-weight: 700;
+   }
+
+  @keyframes typing {
+      from{
+        width: 0;
+      }
+      to{
+        width: 115px;
+      }
+  }
+
+  .motorola {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    -webkit-text-stroke: 0.9px black;
+    background: conic-gradient(
+      #9dca2c 0 25%,
+      #005AA5 25% 50%,
+      #ed7331 50% 75%,
+      #F60100 75%
+    );
+    background-size: 200% 200%;
+    animation: animateBackground 4.5s ease-in-out infinite;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  @keyframes animateBackground {
+    25% {
+      background-position: 0 100%;
+    }
+  
+    50% {
+      background-position: 100% 100%;
+    }
+  
+    75% {
+      background-position: 100% 0%;
+    }
+  
+    100% {
+      background-position: 0 0;
+    }
+  }

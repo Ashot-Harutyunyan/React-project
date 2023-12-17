@@ -1,0 +1,67 @@
+.aboutImg{
+    width: 10%;
+    margin-bottom: 10px;
+    transition: max-height 1000ms;
+
+}
+.aboutDiv{
+    margin: 50px;
+    border: 2px solid #797c86;
+    border-radius: 15px;
+    transition: max-height 1000ms;
+}
+   h2{
+        text-align: center;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 200px;
+        margin-top: 25px;
+    }
+    .down{
+        font-size: 40px;
+        font-weight: 900;
+        width: 40px;
+        padding-bottom: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: rgb(171, 208, 239);
+        
+    }
+.aboutFoto{
+    width: 300px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: max-height 1000ms;
+}
+.aboutbigImg{
+    width: 100%;
+    transition: transform 1000ms;
+}
+.telephone{
+    margin-top: 25px;
+    width: 100%;
+    animation:  telephoneFoto 32000ms infinite;
+    animation-delay: 1000ms;
+}
+.telephoneDiv{
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+@keyframes telephoneFoto {
+    25%{
+       transform: translateX(-100%);
+    }
+    50%{
+       transform: translateX(-200%);
+    }
+    75%{
+       transform: translateX(-300%);
+    }
+    100%{
+       transform: translateX(-400%);
+    }
+}

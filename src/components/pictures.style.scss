@@ -1,0 +1,40 @@
+.slider{
+    width: 350px;
+    height: 300px;
+    margin: 20px auto;
+     overflow: hidden;
+    .wrapper {
+        width: max-content;
+        transition: translate 400ms;
+        img {
+            width: 350px;
+            height: 300px;
+            transform: translate(-100%)
+        }
+    }
+}   
+
+.next, .previous {
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(202, 120, 137);
+    background-color: rgb(227, 215, 199);
+    position: absolute;
+    z-index: 1;
+    margin-top: 115px;
+    &:hover{
+        color: crimson;
+        background-color: rgb(244, 210, 165);
+    }
+}
+.next {
+   margin-left: 300px;
+} 
+
+.infinite {
+    text-align: center;
+    color: darkslategray;
+}

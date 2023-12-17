@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    height: 80px;
+    border-bottom: 3px solid rgb(121, 124, 134);
+    a {
+        text-decoration: none;
+        color: #242424;
+    }
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.link-active {
+    text-decoration: crimson underline 2px;
+    text-underline-offset: 8px;
+    color: #242424;
+}
+
+.formlink{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    h2{
+    color: crimson;
+}
+}
+.form-active {
+    text-decoration: none;
+    color: #242424;
+    // font-size: 20px;
+}

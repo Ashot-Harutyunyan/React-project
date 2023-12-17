@@ -1,0 +1,337 @@
+.fa-instagram {
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    cursor: pointer;
+  }
+  .contener1{
+    margin: 20px;
+    display: grid;
+    width: 80px;
+      &:hover{
+        color: #fc0683;
+      }
+      &:hover .div1{
+        width: 0px;
+        background-color: #fc0683;
+      }
+      &:hover .div3{
+        height: 100%;
+        background-color: #fc0683;
+      }
+      &:hover .div2 > div {
+        transform: translateY(-100%);
+        background-color: #fc0683;
+      }
+      &:hover .div4 > div{
+        transform: translateX(calc(100% + 2px));
+        background-color: #fc0683;
+      }
+  }
+  .div1{ 
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: width 1000ms;
+  }
+  .div2{
+    width: 2px;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/3;
+    overflow: hidden;
+  }
+  .childDiv2{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin-top: 82px;
+    transition: transform 1000ms; 
+  }
+  .div3{
+    width: 2px;
+    height: 0px;
+    background-color: black; 
+    grid-row: 2/1;
+    grid-column: 2/1;
+    transition: height 1000ms;
+  }
+  .div4{
+    width: 100%;
+    height: 2px;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    overflow: hidden;
+  }
+  .childDiv4{
+    width: 100% ;
+    height: 2px;
+    background-color: black;
+    transition: transform 1000ms; 
+  }
+  
+  .fa-facebook{
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    cursor: pointer;
+  }
+  .contener2{
+    margin: 20px;
+    display: grid;
+    width: 80px;
+      &:hover{
+        color: #0870e5;
+      }
+      &:hover .div5{
+        width: 0px;
+        background-color: #0870e5;
+      }
+      &:hover .div7{
+        height: 100%;
+        background-color: #0870e5;
+      }
+      &:hover .div6 > div {
+        transform: translateY(-100%);
+        background-color: #0870e5;
+      }
+      &:hover .div8 > div{
+        transform: translateX(calc(100% + 2px));
+        background-color: #0870e5;
+      }
+  }
+  .div5{ 
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: width 1000ms;
+  }
+  .div6{
+    width: 2px;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/3;
+    overflow: hidden;
+  }
+  .childDiv6{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin-top: 82px;
+    transition: transform 1000ms; 
+  }
+  .div7{
+    width: 2px;
+    height: 0px;
+    background-color: black; 
+    grid-row: 2/1;
+    grid-column: 2/1;
+    transition: height 1000ms;
+  }
+  .div8{
+    width: 100%;
+    height: 2px;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    overflow: hidden;
+  }
+  .childDiv8{
+    width: 100% ;
+    height: 2px;
+    background-color: black;
+    transition: transform 1000ms; 
+  }
+  
+  .fa-youtube{
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    cursor: pointer;
+  }
+  .contener3{
+    margin: 20px;
+    display: grid;
+    width: 80px;
+      &:hover{
+        color: #ff0101;
+      }
+      &:hover .div9{
+        width: 0px;
+        background-color: #ff0101;
+      }
+      &:hover .div11{
+        height: 100%;
+        background-color: #ff0101;
+      }
+      &:hover .div10 > div {
+        transform: translateY(-100%);
+        background-color: #ff0101;
+      }
+      &:hover .div12 > div{
+        transform: translateX(calc(100% + 2px));
+        background-color: #ff0101;
+      }
+  }
+  .div9{ 
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: width 1000ms;
+  }
+  .div10{
+    width: 2px;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/3;
+    overflow: hidden;
+  }
+  .childDiv10{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin-top: 82px;
+    transition: transform 1000ms; 
+  }
+  .div11{
+    width: 2px;
+    height: 0px;
+    background-color: black; 
+    grid-row: 2/1;
+    grid-column: 2/1;
+    transition: height 1000ms;
+  }
+  .div12{
+    width: 100%;
+    height: 2px;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    overflow: hidden;
+  }
+  .childDiv12{
+    width: 100% ;
+    height: 2px;
+    background-color: black;
+    transition: transform 1000ms; 
+  }
+  
+  
+  .fa-telegram{
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    cursor: pointer;
+  }
+  .contener4{
+    margin: 20px;
+    display: grid;
+    width: 80px;
+      &:hover{
+        color: #3390ec;
+      }
+      &:hover .div13{
+        width: 0px;
+        background-color: #3390ec;
+      }
+      &:hover .div15{
+        height: 100%;
+        background-color: #3390ec;
+      }
+      &:hover .div14 > div {
+        transform: translateY(-100%);
+        background-color: #3390ec;
+      }
+      &:hover .div16 > div{
+        transform: translateX(calc(100% + 2px));
+        background-color: #3390ec;
+      }
+  }
+  .div13{ 
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: width 1000ms;
+  }
+  .div14{
+    width: 2px;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/3;
+    overflow: hidden;
+  }
+  .childDiv14{
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin-top: 82px;
+    transition: transform 1000ms; 
+  }
+  .div15{
+    width: 2px;
+    height: 0px;
+    background-color: black; 
+    grid-row: 2/1;
+    grid-column: 2/1;
+    transition: height 1000ms;
+  }
+  .div16{
+    width: 100%;
+    height: 2px;
+    grid-row: 2/2;
+    grid-column: 1/2;
+    overflow: hidden;
+  }
+  .childDiv16{
+    width: 100% ;
+    height: 2px;
+    background-color: black;
+    transition: transform 1000ms; 
+  }
+  .mainContener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.webSite{ 
+  margin: 0 auto; 
+  overflow: hidden;
+  white-space: nowrap;  
+  border-right: 2px solid #3726f6;
+  vertical-align: bottom;
+  animation: typing 5500ms steps(20) infinite;
+  h3{
+    color: #3726f6;
+     font-size: 25px; 
+  }
+}
+
+@keyframes typing {
+    from{
+      width: 0;
+    }
+    to{
+      width: 385px;
+    }
+}
+
+.contactsImage{
+    width: 100%;
+}
