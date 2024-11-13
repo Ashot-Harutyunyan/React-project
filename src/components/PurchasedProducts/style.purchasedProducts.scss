@@ -1,0 +1,27 @@
+.PurchasedProducts-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.PurchasedProducts-container-div {
+    border: 2px solid white;
+    width: 250px;
+    color: white;
+    text-align: center;
+    h2 {
+        height: 60px;
+        color: #51CDC5;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    p {
+        margin: 5px 0px;
+    }
+}
