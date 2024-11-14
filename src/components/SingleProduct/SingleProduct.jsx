@@ -394,7 +394,7 @@ function SingleProduct() {
                 <img src="/shopping-cart-svgrepo-com-1.svg" alt=""/>
                 Add to cart
             </button>
-            <button className='Buy-button' onClick={()=>{
+            <button className='SingleProduct-Buy-button' onClick={()=>{
                 if(!allUsers.login) setOpenAndClose({...openAndClose, buyMessage: true})
                 else setOpenAndClose({...openAndClose, payment: true})
             }}>

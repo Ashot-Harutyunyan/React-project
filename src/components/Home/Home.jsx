@@ -27,7 +27,7 @@ function Home() {
     const [pageArr, setPageArr] = useState(new Array(10).fill(false))  
 
     useEffect(() => {
-      dispatch(fetchHomeProducts(`https://dummyjson.com/products?limit=20&skip=${firstIndex}&select=title,price,images,id,rating,shippingInformation,category`))
+      dispatch(fetchHomeProducts(`https://dummyjson.com/products?limit=20&skip=${firstIndex}&select=title,price,images,id,rating,shippingInformation,category,warrantyInformation`))
       setPageArr(pageArr.map((_, i)=> i === (page - 1)))
     }, [dispatch, page])    
 

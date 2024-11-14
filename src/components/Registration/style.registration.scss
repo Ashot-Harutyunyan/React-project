@@ -1,16 +1,14 @@
-.Registration-div {
+.Registration-div { 
     width: clamp(325px, 40vw, 360px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: absolute;
     padding: 30px 0px 5px 0px;
     z-index: 2;
-    // top: 150px;
-    // right: 2.5%;
     border: 2px solid white;
     background-color: #e0e7ee;
-    
     h2 {
         color: #213547;
         margin-bottom: 25px;
