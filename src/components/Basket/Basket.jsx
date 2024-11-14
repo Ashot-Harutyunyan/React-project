@@ -9,7 +9,10 @@ import { increaseQuantity, reduceTheAmount, removeItemFromCart } from '../Basket
 import {  purchasedProducts } from '../../Layout/userSlice'
 import Registration from '../Registration/Registration'
 import Login from '../Login/Login'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
+const optimizedImageUrl = 'https://res.cloudinary.com/duukwvftd/image/fetch/q_auto,f_auto,w_300,h_300/'
 
 function Basket() {
 
@@ -67,7 +70,7 @@ function Basket() {
         return <div key={index} className='basket-container'>
 
           <div className='basket-container-div-one'>
-            <img src={elem.images[0]} alt="" />
+            <LazyLoadImage  src={optimizedImageUrl + elem.images[0]} alt={elem.title} effect="blur"/>
           </div>
 
           <div className='basket-container-div-two'>
